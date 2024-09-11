@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A260051E26586CAD506C1C4 /* Pods_AllergyDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151AE9E75DC36DDCB300247 /* Pods_AllergyDetector.framework */; };
 		A33B06102C8B2387004B57F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B060F2C8B2387004B57F3 /* AppDelegate.swift */; };
 		A33B06122C8B2387004B57F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06112C8B2387004B57F3 /* SceneDelegate.swift */; };
-		A33B06142C8B2387004B57F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06132C8B2387004B57F3 /* ViewController.swift */; };
+		A33B06142C8B2387004B57F3 /* PatientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06132C8B2387004B57F3 /* PatientProfileViewController.swift */; };
 		A33B06172C8B2387004B57F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33B06152C8B2387004B57F3 /* Main.storyboard */; };
 		A33B06192C8B2389004B57F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33B06182C8B2389004B57F3 /* Assets.xcassets */; };
 		A33B061C2C8B2389004B57F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33B061A2C8B2389004B57F3 /* LaunchScreen.storyboard */; };
+		A33B06272C8B2439004B57F3 /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06262C8B2439004B57F3 /* Allergy.swift */; };
+		A33B062A2C8B2489004B57F3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06292C8B2489004B57F3 /* Patient.swift */; };
+		A33B062C2C8B322A004B57F3 /* PatientCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33B062B2C8B322A004B57F3 /* PatientCollectionViewCell.xib */; };
+		A33B062E2C8B3270004B57F3 /* PatientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B062D2C8B3270004B57F3 /* PatientCollectionViewCell.swift */; };
+		A34362A12C8F07E2009A282B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A02C8F07E2009A282B /* Operation.swift */; };
+		A34362A32C8F14F2009A282B /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A22C8F14F2009A282B /* SignViewController.swift */; };
+		A34362A62C8F1D1E009A282B /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A52C8F1D1E009A282B /* SignViewModel.swift */; };
+		A34362A82C8F1D2E009A282B /* PatientProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A72C8F1D2E009A282B /* PatientProfileViewModel.swift */; };
+		A34362AA2C906ACD009A282B /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A92C906ACD009A282B /* Firebase.swift */; };
+		A3AD4A5B2C91BD9D005C6501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3AD4A5A2C91BD9D005C6501 /* GoogleService-Info.plist */; };
+		A3AD4A5D2C91C192005C6501 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD4A5C2C91C191005C6501 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6151AE9E75DC36DDCB300247 /* Pods_AllergyDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllergyDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCAE52697A623D9724A3529 /* Pods-AllergyDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllergyDetector.debug.xcconfig"; path = "Target Support Files/Pods-AllergyDetector/Pods-AllergyDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		982CE7DDF09BB6784364468F /* Pods-AllergyDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllergyDetector.release.xcconfig"; path = "Target Support Files/Pods-AllergyDetector/Pods-AllergyDetector.release.xcconfig"; sourceTree = "<group>"; };
 		A33B060C2C8B2387004B57F3 /* AllergyDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllergyDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33B060F2C8B2387004B57F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33B06112C8B2387004B57F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A33B06132C8B2387004B57F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A33B06132C8B2387004B57F3 /* PatientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewController.swift; sourceTree = "<group>"; };
 		A33B06162C8B2387004B57F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A33B06182C8B2389004B57F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33B061B2C8B2389004B57F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A33B061D2C8B2389004B57F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33B06262C8B2439004B57F3 /* Allergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergy.swift; sourceTree = "<group>"; };
+		A33B06292C8B2489004B57F3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		A33B062B2C8B322A004B57F3 /* PatientCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientCollectionViewCell.xib; sourceTree = "<group>"; };
+		A33B062D2C8B3270004B57F3 /* PatientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCollectionViewCell.swift; sourceTree = "<group>"; };
+		A34362A02C8F07E2009A282B /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		A34362A22C8F14F2009A282B /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		A34362A52C8F1D1E009A282B /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
+		A34362A72C8F1D2E009A282B /* PatientProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewModel.swift; sourceTree = "<group>"; };
+		A34362A92C906ACD009A282B /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		A3AD4A5A2C91BD9D005C6501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3AD4A5C2C91C191005C6501 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A260051E26586CAD506C1C4 /* Pods_AllergyDetector.framework in Frameworks */,
+				A3AD4A5D2C91C192005C6501 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C5B9FDBD2FFDA7B1AB8CB0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3AD4A5C2C91C191005C6501 /* StoreKit.framework */,
+				6151AE9E75DC36DDCB300247 /* Pods_AllergyDetector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A33B06032C8B2387004B57F3 = {
 			isa = PBXGroup;
 			children = (
 				A33B060E2C8B2387004B57F3 /* AllergyDetector */,
 				A33B060D2C8B2387004B57F3 /* Products */,
+				DF44E39ED938D15608071367 /* Pods */,
+				7C5B9FDBD2FFDA7B1AB8CB0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +95,58 @@
 		A33B060E2C8B2387004B57F3 /* AllergyDetector */ = {
 			isa = PBXGroup;
 			children = (
+				A33B06232C8B23F2004B57F3 /* Model */,
+				A33B06252C8B23FD004B57F3 /* View */,
+				A34362A42C8F1C72009A282B /* ViewModel */,
 				A33B060F2C8B2387004B57F3 /* AppDelegate.swift */,
 				A33B06112C8B2387004B57F3 /* SceneDelegate.swift */,
-				A33B06132C8B2387004B57F3 /* ViewController.swift */,
-				A33B06152C8B2387004B57F3 /* Main.storyboard */,
 				A33B06182C8B2389004B57F3 /* Assets.xcassets */,
 				A33B061A2C8B2389004B57F3 /* LaunchScreen.storyboard */,
+				A3AD4A5A2C91BD9D005C6501 /* GoogleService-Info.plist */,
 				A33B061D2C8B2389004B57F3 /* Info.plist */,
 			);
 			path = AllergyDetector;
+			sourceTree = "<group>";
+		};
+		A33B06232C8B23F2004B57F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A33B06262C8B2439004B57F3 /* Allergy.swift */,
+				A33B06292C8B2489004B57F3 /* Patient.swift */,
+				A34362A02C8F07E2009A282B /* Operation.swift */,
+				A34362A92C906ACD009A282B /* Firebase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A33B06252C8B23FD004B57F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A34362A22C8F14F2009A282B /* SignViewController.swift */,
+				A33B06132C8B2387004B57F3 /* PatientProfileViewController.swift */,
+				A33B06152C8B2387004B57F3 /* Main.storyboard */,
+				A33B062B2C8B322A004B57F3 /* PatientCollectionViewCell.xib */,
+				A33B062D2C8B3270004B57F3 /* PatientCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A34362A42C8F1C72009A282B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A34362A52C8F1D1E009A282B /* SignViewModel.swift */,
+				A34362A72C8F1D2E009A282B /* PatientProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF44E39ED938D15608071367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CCAE52697A623D9724A3529 /* Pods-AllergyDetector.debug.xcconfig */,
+				982CE7DDF09BB6784364468F /* Pods-AllergyDetector.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A33B06202C8B2389004B57F3 /* Build configuration list for PBXNativeTarget "AllergyDetector" */;
 			buildPhases = (
+				FBA24F623E0340F56FAC0915 /* [CP] Check Pods Manifest.lock */,
 				A33B06082C8B2387004B57F3 /* Sources */,
 				A33B06092C8B2387004B57F3 /* Frameworks */,
 				A33B060A2C8B2387004B57F3 /* Resources */,
+				F6DCEE122B7768890FB1411F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +211,72 @@
 			files = (
 				A33B061C2C8B2389004B57F3 /* LaunchScreen.storyboard in Resources */,
 				A33B06192C8B2389004B57F3 /* Assets.xcassets in Resources */,
+				A3AD4A5B2C91BD9D005C6501 /* GoogleService-Info.plist in Resources */,
+				A33B062C2C8B322A004B57F3 /* PatientCollectionViewCell.xib in Resources */,
 				A33B06172C8B2387004B57F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6DCEE122B7768890FB1411F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AllergyDetector/Pods-AllergyDetector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AllergyDetector/Pods-AllergyDetector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AllergyDetector/Pods-AllergyDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA24F623E0340F56FAC0915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllergyDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A33B06082C8B2387004B57F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33B06142C8B2387004B57F3 /* ViewController.swift in Sources */,
+				A33B06272C8B2439004B57F3 /* Allergy.swift in Sources */,
+				A34362A12C8F07E2009A282B /* Operation.swift in Sources */,
+				A33B06142C8B2387004B57F3 /* PatientProfileViewController.swift in Sources */,
+				A34362AA2C906ACD009A282B /* Firebase.swift in Sources */,
+				A34362A82C8F1D2E009A282B /* PatientProfileViewModel.swift in Sources */,
+				A34362A32C8F14F2009A282B /* SignViewController.swift in Sources */,
+				A33B062E2C8B3270004B57F3 /* PatientCollectionViewCell.swift in Sources */,
 				A33B06102C8B2387004B57F3 /* AppDelegate.swift in Sources */,
+				A34362A62C8F1D1E009A282B /* SignViewModel.swift in Sources */,
 				A33B06122C8B2387004B57F3 /* SceneDelegate.swift in Sources */,
+				A33B062A2C8B2489004B57F3 /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +418,7 @@
 		};
 		A33B06212C8B2389004B57F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCAE52697A623D9724A3529 /* Pods-AllergyDetector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +431,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +447,7 @@
 		};
 		A33B06222C8B2389004B57F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982CE7DDF09BB6784364468F /* Pods-AllergyDetector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +460,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
