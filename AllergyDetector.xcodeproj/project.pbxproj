@@ -16,15 +16,17 @@
 		A33B061C2C8B2389004B57F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33B061A2C8B2389004B57F3 /* LaunchScreen.storyboard */; };
 		A33B06272C8B2439004B57F3 /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06262C8B2439004B57F3 /* Allergy.swift */; };
 		A33B062A2C8B2489004B57F3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B06292C8B2489004B57F3 /* Patient.swift */; };
-		A33B062C2C8B322A004B57F3 /* PatientCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33B062B2C8B322A004B57F3 /* PatientCollectionViewCell.xib */; };
-		A33B062E2C8B3270004B57F3 /* PatientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B062D2C8B3270004B57F3 /* PatientCollectionViewCell.swift */; };
-		A34362A12C8F07E2009A282B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A02C8F07E2009A282B /* Operation.swift */; };
 		A34362A32C8F14F2009A282B /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A22C8F14F2009A282B /* SignViewController.swift */; };
 		A34362A62C8F1D1E009A282B /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A52C8F1D1E009A282B /* SignViewModel.swift */; };
 		A34362A82C8F1D2E009A282B /* PatientProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A72C8F1D2E009A282B /* PatientProfileViewModel.swift */; };
-		A34362AA2C906ACD009A282B /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34362A92C906ACD009A282B /* Firebase.swift */; };
 		A3AD4A5B2C91BD9D005C6501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3AD4A5A2C91BD9D005C6501 /* GoogleService-Info.plist */; };
 		A3AD4A5D2C91C192005C6501 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD4A5C2C91C191005C6501 /* StoreKit.framework */; };
+		A3B93CEB2CA5875C00D8F2A3 /* PatientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B93CE92CA5875C00D8F2A3 /* PatientCollectionViewCell.swift */; };
+		A3B93CEC2CA5875C00D8F2A3 /* PatientCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B93CEA2CA5875C00D8F2A3 /* PatientCollectionViewCell.xib */; };
+		A3B93CEE2CAAF27D00D8F2A3 /* AllergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B93CED2CAAF27D00D8F2A3 /* AllergyViewController.swift */; };
+		A3B93CF12CAC044300D8F2A3 /* AllergyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B93CEF2CAC044300D8F2A3 /* AllergyTableViewCell.swift */; };
+		A3B93CF22CAC044300D8F2A3 /* AllergyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B93CF02CAC044300D8F2A3 /* AllergyTableViewCell.xib */; };
+		A3B93CF42CAC06B600D8F2A3 /* AllergyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B93CF32CAC06B600D8F2A3 /* AllergyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,15 +43,17 @@
 		A33B061D2C8B2389004B57F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A33B06262C8B2439004B57F3 /* Allergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergy.swift; sourceTree = "<group>"; };
 		A33B06292C8B2489004B57F3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
-		A33B062B2C8B322A004B57F3 /* PatientCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientCollectionViewCell.xib; sourceTree = "<group>"; };
-		A33B062D2C8B3270004B57F3 /* PatientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCollectionViewCell.swift; sourceTree = "<group>"; };
-		A34362A02C8F07E2009A282B /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		A34362A22C8F14F2009A282B /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		A34362A52C8F1D1E009A282B /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
 		A34362A72C8F1D2E009A282B /* PatientProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewModel.swift; sourceTree = "<group>"; };
-		A34362A92C906ACD009A282B /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		A3AD4A5A2C91BD9D005C6501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3AD4A5C2C91C191005C6501 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A3B93CE92CA5875C00D8F2A3 /* PatientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3B93CEA2CA5875C00D8F2A3 /* PatientCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientCollectionViewCell.xib; sourceTree = "<group>"; };
+		A3B93CED2CAAF27D00D8F2A3 /* AllergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyViewController.swift; sourceTree = "<group>"; };
+		A3B93CEF2CAC044300D8F2A3 /* AllergyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyTableViewCell.swift; sourceTree = "<group>"; };
+		A3B93CF02CAC044300D8F2A3 /* AllergyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllergyTableViewCell.xib; sourceTree = "<group>"; };
+		A3B93CF32CAC06B600D8F2A3 /* AllergyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,6 @@
 				A34362A42C8F1C72009A282B /* ViewModel */,
 				A33B060F2C8B2387004B57F3 /* AppDelegate.swift */,
 				A33B06112C8B2387004B57F3 /* SceneDelegate.swift */,
-				A33B06182C8B2389004B57F3 /* Assets.xcassets */,
 				A33B061A2C8B2389004B57F3 /* LaunchScreen.storyboard */,
 				A3AD4A5A2C91BD9D005C6501 /* GoogleService-Info.plist */,
 				A33B061D2C8B2389004B57F3 /* Info.plist */,
@@ -113,8 +116,6 @@
 			children = (
 				A33B06262C8B2439004B57F3 /* Allergy.swift */,
 				A33B06292C8B2489004B57F3 /* Patient.swift */,
-				A34362A02C8F07E2009A282B /* Operation.swift */,
-				A34362A92C906ACD009A282B /* Firebase.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,9 +125,13 @@
 			children = (
 				A34362A22C8F14F2009A282B /* SignViewController.swift */,
 				A33B06132C8B2387004B57F3 /* PatientProfileViewController.swift */,
+				A3B93CED2CAAF27D00D8F2A3 /* AllergyViewController.swift */,
+				A3B93CE92CA5875C00D8F2A3 /* PatientCollectionViewCell.swift */,
+				A3B93CEA2CA5875C00D8F2A3 /* PatientCollectionViewCell.xib */,
+				A3B93CEF2CAC044300D8F2A3 /* AllergyTableViewCell.swift */,
+				A3B93CF02CAC044300D8F2A3 /* AllergyTableViewCell.xib */,
+				A33B06182C8B2389004B57F3 /* Assets.xcassets */,
 				A33B06152C8B2387004B57F3 /* Main.storyboard */,
-				A33B062B2C8B322A004B57F3 /* PatientCollectionViewCell.xib */,
-				A33B062D2C8B3270004B57F3 /* PatientCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			children = (
 				A34362A52C8F1D1E009A282B /* SignViewModel.swift */,
 				A34362A72C8F1D2E009A282B /* PatientProfileViewModel.swift */,
+				A3B93CF32CAC06B600D8F2A3 /* AllergyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,9 +217,10 @@
 			files = (
 				A33B061C2C8B2389004B57F3 /* LaunchScreen.storyboard in Resources */,
 				A33B06192C8B2389004B57F3 /* Assets.xcassets in Resources */,
+				A3B93CF22CAC044300D8F2A3 /* AllergyTableViewCell.xib in Resources */,
 				A3AD4A5B2C91BD9D005C6501 /* GoogleService-Info.plist in Resources */,
-				A33B062C2C8B322A004B57F3 /* PatientCollectionViewCell.xib in Resources */,
 				A33B06172C8B2387004B57F3 /* Main.storyboard in Resources */,
+				A3B93CEC2CA5875C00D8F2A3 /* PatientCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,16 +274,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33B06272C8B2439004B57F3 /* Allergy.swift in Sources */,
-				A34362A12C8F07E2009A282B /* Operation.swift in Sources */,
 				A33B06142C8B2387004B57F3 /* PatientProfileViewController.swift in Sources */,
-				A34362AA2C906ACD009A282B /* Firebase.swift in Sources */,
 				A34362A82C8F1D2E009A282B /* PatientProfileViewModel.swift in Sources */,
 				A34362A32C8F14F2009A282B /* SignViewController.swift in Sources */,
-				A33B062E2C8B3270004B57F3 /* PatientCollectionViewCell.swift in Sources */,
 				A33B06102C8B2387004B57F3 /* AppDelegate.swift in Sources */,
+				A3B93CF42CAC06B600D8F2A3 /* AllergyViewModel.swift in Sources */,
+				A3B93CEE2CAAF27D00D8F2A3 /* AllergyViewController.swift in Sources */,
+				A3B93CEB2CA5875C00D8F2A3 /* PatientCollectionViewCell.swift in Sources */,
 				A34362A62C8F1D1E009A282B /* SignViewModel.swift in Sources */,
 				A33B06122C8B2387004B57F3 /* SceneDelegate.swift in Sources */,
 				A33B062A2C8B2489004B57F3 /* Patient.swift in Sources */,
+				A3B93CF12CAC044300D8F2A3 /* AllergyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

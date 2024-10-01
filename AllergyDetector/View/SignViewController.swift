@@ -14,10 +14,6 @@ class SignViewController: UIViewController, UITextFieldDelegate {
     
     let signVM = SignViewModel()
     
-    private var name : String?
-    private var password : String?
-    var personalId : Int?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +21,7 @@ class SignViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
         
     }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool { // return e bastıysa
         
@@ -40,21 +37,6 @@ class SignViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-        if textField.tag == 0 {
-            name = textField.text
-        } else if textField.tag == 1 {
-            password = textField.text
-        }
-    
-        if name != nil && password != nil {
-            personalId = signVM.controlSignOperation(name: name!, password: password!)
-           
-        }
-       
-    }
-    
     @IBAction func showNextPage(_ sender: UIButton) {
         
         guard let username = nameTextField.text, !username.isEmpty,
@@ -63,11 +45,17 @@ class SignViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        if personalId != 0 && personalId != nil{
-            
-            performSegue(withIdentifier: "signSegue", sender: self)
-            
-        }
+        signVM.authenticateUser(username: username, password: Int(password) ?? 0) { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success :
+                        self.performSegue(withIdentifier: "signSegue", sender: self)
+                    case .failure(_):
+                  
+                        self.showAlert()
+                    }
+                }
+            }
     }
     
     func showAlert() {
@@ -86,7 +74,7 @@ class SignViewController: UIViewController, UITextFieldDelegate {
         if segue.identifier == "signSegue" {
             
             let vc = segue.destination as! PatientProfileViewController
-            vc.personalId = personalId
+          
         }
        
     }
