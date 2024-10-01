@@ -9,25 +9,37 @@ import Foundation
 
 
 class Allergy {
+
+    static let subclasses : [Allergy.Type] = [Pollen.self, DustMite.self, Food.self, Pet.self, Mold.self, Drug.self, InsectSting.self, Latex.self]
     
     var name : String?
-    var precaution : String?
+    var precaution : String? // öneri
+    
+    required init(name: String? = nil, precaution: String? = nil) {
+        self.name = name
+        self.precaution = precaution
+    }
     
     func controlAllergy() -> String {
         
-        let isAllergic = Bool.random()   // Buraya gerçek hayatta test yapıldıktan sonra doktorun gireceği sonuç eklenecektir.
-        if isAllergic == true {
-            return name!
-        } else {
+        guard let allergies = Patient.sharedPatient.allergyInfo else {
             return ""
         }
+        for allergy in allergies {
+            if allergy == self.name {
+                return name!
+            }
+        }
+       
+        return ""
     }
+
     
 }
 
 class Pollen : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "Pollen"
         self.precaution = ""
@@ -37,7 +49,7 @@ class Pollen : Allergy {
 
 class DustMite : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "DustMite"
         self.precaution = ""
@@ -46,7 +58,7 @@ class DustMite : Allergy {
 
 class Food : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "Food"
         self.precaution = ""
@@ -55,7 +67,7 @@ class Food : Allergy {
 
 class Pet : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "Pet"
         self.precaution = ""
@@ -64,7 +76,7 @@ class Pet : Allergy {
 
 class Mold : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "Mold"
         self.precaution = ""
@@ -73,7 +85,7 @@ class Mold : Allergy {
 
 class Drug : Allergy {
  
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "Drug"
         self.precaution = ""
@@ -82,7 +94,7 @@ class Drug : Allergy {
 
 class InsectSting : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "InsectSting"
         self.precaution = ""
@@ -91,7 +103,7 @@ class InsectSting : Allergy {
 
 class Latex : Allergy {
     
-    override init() {
+    required init(name: String? = nil, precaution: String? = nil) {
         super.init()
         self.name = "Latex"
         self.precaution = ""

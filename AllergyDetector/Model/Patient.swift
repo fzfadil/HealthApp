@@ -8,25 +8,36 @@
 import Foundation
 
 class Patient {
+
+    static let sharedPatient = Patient()
     
     var personalId : Int?
     var name : String?
     var surname : String?
     var age : Int?
     var gender : String?
-    var allergyInfo : [Allergy]?
+    var allergyInfo : [String]?
+    var password : Int?
+    var height : Int?
+    var weight : Int?
+    var blood : String?
     
     
-    init(name: String? = nil, surname: String? = nil, age: Int? = nil, gender: String? = nil, allergyInfo: [Allergy]? = nil) {
+    func setValues(name: String? = nil, surname: String? = nil, age: Int? = nil, gender: String? = nil, allergyInfo: [String]? = nil, password : Int? = nil, personalId : Int? = nil, height : Int? = nil, weight : Int? = nil, blood : String? = nil) {
     
         self.name = name
         self.surname = surname
         self.age = age
         self.gender = gender
         self.allergyInfo = allergyInfo
+        self.password = password
+        self.personalId = personalId
+        self.height = height
+        self.weight = weight
+        self.blood = blood
     }
     
-    init(personalId : Int? = nil) {
+    private init(personalId : Int? = nil) {
         
         self.personalId = personalId
     }
