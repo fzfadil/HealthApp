@@ -25,10 +25,9 @@ class Allergy {
         guard let allergies = Patient.sharedPatient.allergyInfo else {
             return ""
         }
-        for allergy in allergies {
-            if allergy == self.name {
-                return name!
-            }
+       
+        if allergies.contains(self.name ?? "") {
+            return self.name!
         }
        
         return ""

@@ -10,7 +10,6 @@ import UIKit
 class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
    
     let allergyVM = AllergyViewModel()
-    let allergies = Allergy.subclasses
     
     @IBOutlet weak var allergyTableView: UITableView!
 
@@ -41,20 +40,16 @@ class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allergies.count
+        return allergyVM.allergies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllergyTableViewCell", for: indexPath) as! AllergyTableViewCell
         
-        let currentAllergy = allergies[indexPath.row].init()
-        cell.allergyNameLbl.text = currentAllergy.name
-        if currentAllergy.controlAllergy() != "" {
-            cell.allergyInfoLbl.text = "+"
-        } else {
-            cell.allergyInfoLbl.text = "-"
-        }
+        cell.allergyNameLbl.text = allergyVM.getCurretnAllergyName(row: indexPath.row)
+        cell.allergyInfoLbl.text = allergyVM.controlAllergy(row : indexPath.row)
+      
         
         
         return cell

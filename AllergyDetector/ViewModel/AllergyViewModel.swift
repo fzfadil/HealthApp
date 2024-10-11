@@ -9,12 +9,20 @@ import Foundation
 
 class AllergyViewModel {
     
-    func controlAllergy() {
+    let allergies = Allergy.subclasses
+    
+    func getCurretnAllergyName(row : Int) -> String {
+        return allergies[row].init().name ?? ""
+    }
+    
+    func controlAllergy(row : Int) -> String {
         
-        for subclass in Allergy.subclasses {
-            let allergy = subclass.init()
-            
-            print(allergy.controlAllergy())
+        let allergy = allergies[row].init()
+        
+        if allergy.controlAllergy() != "" {
+            return "+"
+        } else {
+            return "-"
         }
     }
     
